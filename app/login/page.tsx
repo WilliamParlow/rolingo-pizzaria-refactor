@@ -35,11 +35,11 @@ const LoginPage: React.FC = () => {
     };
 
     return (
-        <section className="relative flex flex-col items-center justify-center min-h-screen">
+        <section className="relative flex flex-col items-center justify-center w-full">
 
-            <div className="w-full max-w-md bg-white rounded-md shadow-lg bg-gray-100 p-2">
+            <div className="w-full h-full bg-white rounded-md shadow-lg bg-gray-100 p-2">
 
-                <form onSubmit={handleLogin}>
+                <form onSubmit={handleLogin} className='flex flex-col justify-between h-full'>
 
                     <header className="text-center mb-6 bg-[#FF5722] rounded-md">
 
@@ -53,12 +53,12 @@ const LoginPage: React.FC = () => {
 
                         <div className="form-group">
                             <label htmlFor="login">Email</label>
-                            <input value={username} type="email" placeholder="Entre com seu email!" required className="form-control w-full px-3 py-2 placeholder-gray-500 text-gray-900 rounded-md focus:outline-none" onChange={handleUsernameChange} />
+                            <input value={username} type="email" placeholder="Entre com seu email!" required className="form-control w-full px-3 py-2 placeholder-gray-500 text-gray-900 rounded-md mb-4 shadow" onChange={handleUsernameChange} />
                         </div>
 
                         <div className="form-group">
                             <label htmlFor="passwd">Senha</label>
-                            <input value={password} type="password" placeholder="Entre com sua senha!" required className="form-control w-full px-3 py-2 placeholder-gray-500 text-gray-900 rounded-md focus:outline-none" onChange={handlePasswordChange} />
+                            <input value={password} type="password" placeholder="Entre com sua senha!" required className="form-control w-full px-3 py-2 placeholder-gray-500 text-gray-900 rounded-md shadow" onChange={handlePasswordChange} />
                         </div>
 
                     </main>

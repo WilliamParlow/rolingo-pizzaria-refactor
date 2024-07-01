@@ -1,35 +1,18 @@
-interface Dessert {
-    id: number;
-    name: string;
-    recipe: string;
-    ingredient: string;
-    description: string;
-    imageUrl: string | null;
+interface FoodRecipe {
+  id?: number;
+  name: string;
+  recipe: string;
+  ingredient: string;
+  description: string;
+  imageUrl: string;
+  type: "PIZZA" | "DRINK" | "DESSERT";
 }
-
-interface Dessert {
-    id: number;
-    name: string;
-    recipe: string;
-    ingredient: string;
-    description: string;
-    imageUrl: string | null;
-}
-
-type Pizza = {
-    id: number;
-    name: string;
-    recipe: string;
-    ingredient: string;
-    description: string;
-    imageUrl: string | null;
-};
 
 interface User {
-    id: number;
-    name: string;
-    login: string;
-    passwd: string;
-    admin: boolean;
-    blocked: boolean;
+  id?: number;
+  name?: string;
+  login?: string;
+  passwd?: string;
+  admin?: boolean;
+  blocked?: boolean;
 }

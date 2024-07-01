@@ -14,7 +14,7 @@ export default function Home() {
   !cookies?.user && router.push('/login');
 
   return (
-    <main className='min-h-screen'>
+    <main>
       <h1 className='text-xl text-center'>Bem vindo à Rolingo, {cookies?.user?.name}!</h1>
       <div className='mt-6'>
         <p className='text-center p-4 mb-4'>
